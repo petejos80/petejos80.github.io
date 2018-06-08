@@ -274,11 +274,13 @@ form labe [type=text] {
 }
 
 .left {
+	overflow: hidden;
 	float: left;
 	width: 50%;
 }
 
 .right {
+	overflow: hidden;
 	float: right;
 	width: 50%;
 }
@@ -288,9 +290,20 @@ form labe [type=text] {
 }
 
 img {
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 	max-width: 100%;
 	height: auto;
 	padding: 10px 5px 0px;
+	max-width: 100%;
+	-moz-transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+img:hover {
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(0%);
 }
 
 .group:after {
