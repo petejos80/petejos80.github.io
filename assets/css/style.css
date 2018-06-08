@@ -290,20 +290,18 @@ form labe [type=text] {
 }
 
 img {
-	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+	-webkit-filter: brightness(0.9);
+	filter: brightness(0.9);
 	max-width: 100%;
 	height: auto;
 	padding: 10px 5px 0px;
 	max-width: 100%;
-	-moz-transition: all 0.4s;
-	-webkit-transition: all 0.4s;
-	transition: all 0.4s;
 }
 
 img:hover {
-	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-	filter: grayscale(0%);
+	opacity: 1.0;
+	-webkit-filter: brightness(1);
+	filter: brightness(1);
 }
 
 .group:after {
