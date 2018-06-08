@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .main-container h2 {
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	font-weight: 600;
 }
 
@@ -62,7 +62,7 @@ p {
 nav a {
 	font-weight: 600;
 	padding-left: 10px;
-	padding-right: 10px;
+	padding-right: 6px;
 	border-left: 2px solid #dcdcdc;
 	color: #666;
 }
@@ -74,6 +74,10 @@ nav a:hover {
 
 .nobordera {
 	border-left: none;
+}
+
+.sidebarh2 {
+	text-align: center;
 }
 
 /* HEADER STYLES */
@@ -107,23 +111,42 @@ ul li {
 
 /* BODY STYLES */
 
-.column1, .column2 {
+.column1, .column2, .column3 {
 	float: left;
 	border: 1px solid #BEBEBE;
 	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 	background-color: #F5F5F5 !important;
 	margin-bottom: 60px;
+
 }
 
 .column1 {
 	width: 650px;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 }
+
 
 .column2 {
 	width: 270px;
 	margin-left: 40px;
-	height: 200px;
+	height: 170px;
+}
+
+
+.column3 {
+	width: 650px;
+    padding: 0px;
+    margin-right: 0px;
+	margin-left: 0px;
+	border-bottom: 2px solid #666;
+	border-right: none;
+	border-left: none;
+}
+
+.column3 ul {
+	float: none;
+	padding-left: 0px;
+	text-align: center;
 }
 
 .row {
@@ -182,19 +205,19 @@ main {
 
 .git {
 	background: #171515;
-	font-size: 3em;
+	font-size: 2.5em;
 	margin: 0 20px 0 0px;
 }
 
 .linkedin {
 	background: #0077b5;
-	font-size: 3em;
+	font-size: 2.5em;
 	margin: 0 20px 0 0px;
 }
 
 .stackoverflow {
 	background: #f48023;
-	font-size: 3em;
+	font-size: 2.5em;
 	margin: 0 0px 0 0px;
 }
 
@@ -234,7 +257,6 @@ form labe [type=text] {
 /* PORTFOLIO IMAGE FORMATTING */
 
 .imgcolumn1, .imgcolumn2 {
-	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/skyscrapers.jpg);
 	width: 300px;
 	height: 250px;
 	margin-left: 16px;
@@ -249,4 +271,100 @@ form labe [type=text] {
 	margin: 150px 0 20px 0;
 	padding: 10px;
 	color: #fff;
+}
+
+.left {
+	float: left;
+	width: 50%;
+}
+
+.right {
+	float: right;
+	width: 50%;
+}
+
+.group {
+	padding: 0px 5px 0px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	padding: 10px 5px 0px;
+}
+
+.group:after {
+	content:"";
+	display: table;
+	clear: both;
+}
+
+.centered {
+	margin-top: -40px;
+    padding: 10px 0px 10px;
+    margin: 0px 5px 0px;
+    background-color: #3f5c94;
+    text-align: center;
+}
+
+.centered h4 {
+	margin: 0px;
+	font-weight: 900;
+	color: #fff;
+}
+
+
+/* MEDIA QUERIES*/
+
+@media only screen and (max-width: 980px) {
+    .column2 {
+		width: 100%;
+		margin-right: 40px;
+	}
+
+	.column1 {
+		width: 100%;
+		margin-right: 40px;
+		margin-left: 40px;
+	}
+}
+
+@media only screen and (min-width: 640px) {
+	.column3 {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.navmenu {
+		display: none;
+    }
+	
+	.main-container {
+		padding-top: 0px;
+	}
+	
+	header {
+		background-color: #3f5c94;
+		border-bottom: none;
+	}
+	
+	.headerh1 {
+		border: none;
+		float: none;
+		text-align: center;
+		padding-top: 25px;
+	}
+	
+	.header-container {
+		padding-top: 0px;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+	.left, .right {
+		float: none;
+		width: auto;
+	}
 }
