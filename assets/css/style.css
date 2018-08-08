@@ -267,7 +267,7 @@ form labe [type=text] {
 .profileimg {
 	float: left;
     max-width: 300px;
-    margin: 0px 20px 20px 20px;
+    margin: 0px 30px 20px 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 };
 
@@ -296,7 +296,7 @@ form labe [type=text] {
 	padding: 0px 5px 0px;
 }
 
-img {
+.portfolioimg {
 	-webkit-filter: brightness(0.9);
 	filter: brightness(0.9);
 	max-width: 100%;
